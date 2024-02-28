@@ -1,0 +1,83 @@
+* {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 670px;
+    margin: 40px;
+    padding: 10px;
+    color: white;
+    align-items: center;
+}
+
+.title {
+    grid-area: 1 / 1 / 2 / 4;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: -5px 5px 0px #8200ec,
+                 -10px 10px 0px #6f00ca,
+                 -15px 15px 0px #520096,
+                 -25px 25px 25px #5200968e,
+                  5px 25px 25px #5200968e,
+                 -25px 5px 25px #5200968e,
+                  5px 5px 25px #5200968e;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 8px); }
+    100%   { transform: translate(0, -0px); }
+}
+
+.buttons {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: 2 / 1 / 3 / 4;
+    text-align: center;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 1fr;
+    grid-area: 3 / 1 / 4 / 4;
+    text-align: center;
+    align-items: end;
+}
+
+.links {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 25%;
+    justify-self: center;
+    margin: 20px;
+}
+
+.snake-button {
+    background-color: rgb(37, 37, 37);
+    border-radius: 15px;
+    border: 5px solid rgb(37, 37, 37);
+}
+
+.tictactoe-button {
+    background-color: rgb(37, 37, 37);
+    border-radius: 15px;
+    border: 5px solid rgb(37, 37, 37);
+}
+
+.minesweeper-button {
+    background-color: rgb(37, 37, 37);
+    border-radius: 15px;
+    border: 5px solid rgb(37, 37, 37);
+}
