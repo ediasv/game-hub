@@ -6,9 +6,10 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    height: 670px;
-    margin: 40px;
-    padding: 10px;
+    height: 90vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
     color: white;
     align-items: center;
 }
