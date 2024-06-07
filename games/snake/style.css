@@ -1,39 +1,33 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+* {
+    background-color: black;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;
-    font-family: "VT323", monospace;
+    align-items: center;
 }
 
-body,
-.snake {
-    background-color: #292625;
+#title { 
+    grid-area: 1 / 2 / 2 / 3;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #8200ec;
 }
 
-#game-board {
-    border-radius: 100px;
-    display: grid;
-    grid-template-columns: repeat(20, 20px);
-    grid-template-rows: repeat(20, 20px);
-    margin: 5px;
+#border {
+    border: #8200ec solid 8px;
+    border-radius: 20px;
+    color: #8200ec;
 }
 
-.game-border-1 {
-    border: #181615;
-    border-radius: 30px;
-    box-shadow: inset 0 0 0 10px #181615;
+#board-background {
+    background-color: grey;
 }
 
-.game-border-2 {
-    border: #181615;
-    border-radius: 30px;
-    box-shadow: inset 0 0 0 10px #181615;
-}
-
-.game-border-3 {
-    border: #181615;
-    border-radius: 30px;
-    box-shadow: inset 0 0 0 10px #181615;
-}
