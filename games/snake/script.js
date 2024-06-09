@@ -117,6 +117,8 @@ function getSnakePosition() {
   }
 }
 
+// --------------------------------------------------------------------------------------------------------------
+// main
 async function main() {
   createFoodCoordinate();
   while (true) {
