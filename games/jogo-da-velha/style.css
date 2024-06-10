@@ -1,0 +1,10 @@
+* {
+  background-color: black;
+}
+
+.title {
+  font-family: "Press Start 2P", sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
